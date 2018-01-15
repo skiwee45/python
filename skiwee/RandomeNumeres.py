@@ -2,16 +2,20 @@ print("This is a number guessing game, the game will tell you if your guess is a
 import random
 def guessing_game():
     r=random.randint(1,100)
+    tries=1
     while True:
         y=int(input("guess a number between 0 and 100 "))
         if y<r:
             print("Too Small")
+            tries+=1
             
         elif y>r:
             print("Too Big")
+            tries+=1
             
         else:
             print("Right On, You WWIIIINNN!!")
+            print("You took", tries, "tries!")
             break
 
 
