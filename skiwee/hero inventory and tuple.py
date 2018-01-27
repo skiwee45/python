@@ -16,6 +16,10 @@ print("Now I will add all of that stuff to my inventory")
 
 inventory+= epicallysuperdupermagicalchest
 
+#inventory[0]="derpahurpaderpahurpaderp", this doesn't work with tuples, it can't be changed
+
+#del inventory[2], you can't delete elements in tuples
+
 print("My new inventory is- ", inventory)
 
 input("\n\n\t\t\tPress ESC key to exit")

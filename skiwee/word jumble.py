@@ -8,7 +8,8 @@ word=random.choice(WORDS)
 correct=word
 #now i am creating an empty jumble of the word
 jumble=""
-while word:
+#while word:
+while word != "":
     position=random.randrange(len(word))
     jumble+=word[position]
     word=word[:position]+word[(position+1):]
@@ -30,6 +31,8 @@ while guess!=correct and guess!="":
     guess=input("Enter your guess: ")  
 
 if guess==correct: 
+#if guess != "":
+#if guess:
     print("\n\n\nYay, you guess the word!\n\n\n")
         
 print("Thanks for playing my word jumble game by Raymond Lin")
